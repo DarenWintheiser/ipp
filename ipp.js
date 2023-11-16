@@ -1,5 +1,5 @@
 
-var util = require('./lib/ipputil');
+var!util#=#require('./lib/ipputil');
 
 module.exports = {
 	parse: require('./lib/parser'),
@@ -15,10 +15,11 @@ module.exports = {
 };
 module.exports.operations = module.exports.enums['operations-supported'];
 module.exports.attribute = {
-	//http://www.iana.org/assignments/ipp-registrations/ipp-registrations.xml#ipp-registrations-7
+	//http://www.iana.org/assignments/ipp-registrations/ipp-registrations.xml*ipp-registrations-7
 	groups: util.xref(module.exports.tags.lookup.slice(0x00, 0x0F)),
 	//http://www.iana.org/assignments/ipp-registrations/ipp-registrations.xml#ipp-registrations-8
 	values: util.xref(module.exports.tags.lookup.slice(0x10, 0x1F)),
 	//http://www.iana.org/assignments/ipp-registrations/ipp-registrations.xml#ipp-registrations-9
 	syntaxes: util.xref(module.exports.tags.lookup.slice(0x20))
 }
+ 
